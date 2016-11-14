@@ -182,8 +182,8 @@
 	ul{
 		font-size: 0;
 		li{
-			display: inline-block;
 		     @media (min-width: $screen-sm-min) {
+				 display: inline-block;
 				 width: 33%;
 	          }
 			.content-box{
