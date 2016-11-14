@@ -1,0 +1,18 @@
+footer{
+	padding: 20px 0 30px;
+	div{
+		text-align: center;
+		a{
+			display: inline-block;
+			max-width: 100px;
+			img{
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+		h4,h5{
+			text-align: center;
+			color: $brand-secondary;
+		}
+	}
+}
