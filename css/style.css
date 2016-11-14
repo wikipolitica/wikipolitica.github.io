@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+ul {
+  padding-left: 0; }
+  ul li {
+    list-style: none; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #90CAC2; }
+
+#main-nav .nav li a {
+  text-transform: uppercase; }
+
+header {
+  border-bottom: 1px solid #d0d4d9;
+  box-shadow: 0px 1px 1px #d0d4d9; }
+
+.header-info {
+  text-align: right;
+  position: relative; }
+
+.brand-header {
+  display: inline-block;
+  max-width: 96px;
+  position: absolute;
+  left: 15px; }
+  .brand-header a {
+    display: inline-block;
+    line-height: 44px; }
+    .brand-header a img {
+      max-width: 100%; }
+
+#main-nav {
+  min-height: 76px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    #main-nav {
+      display: inline-block; } }
+  #main-nav .navbar-header {
+    position: relative;
+    max-height: 76px;
+    height: 100%; }
+    @media (min-width: 768px) {
+      #main-nav .navbar-header {
+        border: none; } }
+  #main-nav .navbar-toggle {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    max-width: 42px;
+    max-height: 32px; }
+    #main-nav .navbar-toggle .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background: #CE6A6E; }
+  #main-nav .navbar-collapse {
+    padding: 0; }
+  #main-nav .navbar-nav {
+    margin: 0;
+    text-align: left; }
+    @media (min-width: 768px) {
+      #main-nav .navbar-nav {
+        text-align: right; } }
+    #main-nav .navbar-nav li a {
+      color: #90CAC2; }
+      @media (min-width: 768px) {
+        #main-nav .navbar-nav li a {
+          line-height: 45px; } }
+      #main-nav .navbar-nav li a:hover {
+        background: #90CAC2;
+        color: #ffffff; }
+
+#map {
+  margin-top: 15%; }
+  @media (min-width: 768px) {
+    #map {
+      margin: 0; } }
+  #map .land {
+    fill: #dddddd;
+    fill-opacity: 1;
+    stroke: white;
+    stroke-opacity: 1;
+    stroke-width: 0.5; }
+  #map .nodo {
+    transition: all 0.3s ease-in-out;
+    fill: #CE6A6E;
+    position: relative; }
+    #map .nodo:before {
+      content: "Nodo Oficial";
+      display: inline-block;
+      padding: 10px;
+      background: black;
+      border-radius: 10px;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      max-width: 200px;
+      margin: 0 auto; }
+    #map .nodo:hover {
+      cursor: pointer;
+      fill: #90CAC2; }
+  #map .pre-nodo {
+    transition: all 0.3s ease-in-out;
+    fill: #e7b7b9; }
+    #map .pre-nodo:hover {
+      fill: #d5ebe8;
+      cursor: pointer; }
+
+.map {
+  position: relative; }
+  @media (min-width: 768px) {
+    .map {
+      margin: 0 auto; } }
+  @media (min-width: 1200px) {
+    .map {
+      width: 900px; } }
+  .map .colors-sections {
+    display: inline-block;
+    position: absolute;
+    left: 0; }
+    @media (min-width: 768px) {
+      .map .colors-sections {
+        right: 10%;
+        top: 15%;
+        left: auto; } }
+    @media (min-width: 992px) {
+      .map .colors-sections {
+        right: 20%; } }
+    @media (min-width: 1200px) {
+      .map .colors-sections {
+        right: 19%; } }
+    .map .colors-sections h3 {
+      text-align: left;
+      color: #90CAC2;
+      text-transform: capitalize;
+      display: block;
+      vertical-align: middle;
+      font-size: 14px;
+      margin: 0 0 5px; }
+      .map .colors-sections h3:before {
+        content: "";
+        display: inline-block;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle; }
+    .map .colors-sections .nodo:before {
+      background: #CE6A6E; }
+    .map .colors-sections .pre-nodo:before {
+      background: #e7b7b9; }
+
+.slideshow {
+  position: relative; }
+
+#slideshow-carousel {
+  padding-top: 29%;
+  height: auto; }
+  #slideshow-carousel .carousel-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%; }
+    #slideshow-carousel .carousel-inner .item {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      #slideshow-carousel .carousel-inner .item img {
+        max-width: 100%;
+        margin: 0 auto; }
+  #slideshow-carousel .carousel-buttons .carousel-control {
+    background: none; }
+    #slideshow-carousel .carousel-buttons .carousel-control .fa {
+      font-size: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto 0;
+      color: #CE6A6E;
+      opacity: 0.8; }
+    #slideshow-carousel .carousel-buttons .carousel-control.left .fa {
+      left: auto; }
+
+.map-wiki h3 {
+  text-align: center; }
+.map-wiki img {
+  width: 100%;
+  height: 65%; }
+
+.section-info {
+  background: linear-gradient(135deg, #00d68b, #22a3ae);
+  background-attachment: fixed; }
+  .section-info .content-text h2 {
+    color: #ffffff; }
+  .section-info .content-text p {
+    color: #ffffff; }
+  .section-info ul {
+    font-size: 0; }
+    .section-info ul li {
+      display: inline-block;
+      width: 33%; }
+      .section-info ul li .content-box {
+        border-radius: 5px;
+        padding: 30px;
+        margin: 15px; }
+        .section-info ul li .content-box img {
+          max-width: 100%;
+          display: block;
+          margin: 0 auto; }
+        .section-info ul li .content-box h4 {
+          color: #ffffff;
+          font-size: 16px;
+          text-align: center; }
+        .section-info ul li .content-box a {
+          text-align: center;
+          max-width: 100px;
+          display: block;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          color: #ffffff;
+          font-size: 14px;
+          margin: 0 auto;
+          padding: 5px 10px;
+          transition: all 0.3s ease-in-out; }
+          .section-info ul li .content-box a:hover {
+            background: #00d68b;
+            border-color: #00d68b; }
+
+footer {
+  padding: 20px 0 30px; }
+  footer div {
+    text-align: center; }
+    footer div a {
+      display: inline-block;
+      max-width: 100px; }
+      footer div a img {
+        max-width: 100%;
+        margin: 0 auto; }
+    footer div h4, footer div h5 {
+      text-align: center;
+      color: #CE6A6E; }
+
+/*# sourceMappingURL=style.css.map */

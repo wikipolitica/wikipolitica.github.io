@@ -1,0 +1,240 @@
+
+
+
+#map{
+	margin-top: 15%;
+	@media (min-width: $screen-sm-min) {
+		margin: 0;
+	}
+	.land {
+		fill: #dddddd;
+		fill-opacity: 1;
+		stroke:white;
+		stroke-opacity: 1;
+		stroke-width:0.5;
+	}
+	.nodo{
+		transition: all 0.3s ease-in-out;
+		fill:$brand-secondary;
+		position: relative;
+		&:before {
+			content: "Nodo Oficial";
+			display: inline-block;
+			padding: 10px;
+			background: rgba(0, 0, 0, 80);
+			border-radius: 10px;
+			color: $white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			max-width: 200px;
+			margin: 0 auto;
+		}
+		&:hover{
+			cursor: pointer;
+			fill:$brand-primary;
+		}
+	}
+	.pre-nodo{
+		transition: all 0.3s ease-in-out;
+		fill:lighten($brand-secondary, 20);
+		&:hover{
+			fill:lighten($brand-primary, 20);
+			cursor: pointer;
+		}
+	}
+}
+
+.map{
+	position: relative;
+	@media (min-width: $screen-sm-min) {
+		margin: 0 auto;
+	}
+	@media (min-width: $screen-md-min) {
+
+	}
+	@media (min-width: $screen-lg-min) {
+		width: 900px;
+	}
+	.colors-sections {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		@media (min-width: $screen-sm-min) {
+			right: 10%;
+			top: 15%;
+			left: auto;
+		}
+		@media (min-width: $screen-md-min) {
+			right: 20%;
+		}
+		@media (min-width: $screen-lg-min) {
+			right: 19%;
+		}
+		h3 {
+			text-align: left;
+			color: $brand-primary;
+			text-transform: capitalize;
+			display: block;
+			vertical-align: middle;
+			font-size: 14px;
+			margin: 0 0 5px;
+			&:before {
+				content: "";
+				display: inline-block;
+				border-radius: 4px;
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+		}
+		.nodo{
+			&:before{
+				background: $brand-secondary;
+			}
+		}
+		.pre-nodo {
+			&:before{
+				background: lighten($brand-secondary, 20);
+			}
+		}
+
+	}
+}
+
+.slideshow{
+	position: relative;
+}
+#slideshow-carousel{
+	padding-top: 29%;
+	height: auto;
+	.carousel-inner{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		.item{
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			img{
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+	.carousel-buttons{
+		.carousel-control{
+			background: none;
+			.fa{
+				font-size: 40px;
+				max-width: 40px;
+				max-height: 40px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto 0;
+				color: $brand-secondary;
+				opacity: 0.8;
+
+			}
+			&.left{
+				.fa{
+					left: auto;
+				}
+			}
+		}
+	}
+}
+
+
+.map-wiki{
+	h3{
+		text-align: center;
+	}
+	img{
+		width: 100%;
+		height: 65%;
+	}
+}
+
+.section-info{
+	background: linear-gradient(135deg, #00d68b, #22a3ae);
+	background-attachment: fixed;
+	.content-text{
+		h2{
+			color: $white;
+		}
+		p{
+			 color: $white;
+		}
+	}
+	ul{
+		font-size: 0;
+		li{
+			display: inline-block;
+			width: 33%;
+			.content-box{
+				border-radius: 5px;
+				padding: 30px;
+				margin: 15px;
+				img{
+					max-width: 100%;
+					display: block;
+					margin: 0 auto;
+
+				}
+				h4{
+					color: $white;
+					font-size: 16px;
+					text-align: center;
+				}
+				a{
+					text-align: center;
+					max-width: 100px;
+					display: block;
+					border:1px solid $white;
+					border-radius: 5px;
+					color: $white;
+					font-size: 14px;
+					margin: 0 auto;
+					padding: 5px 10px;
+					transition: all 0.3s ease-in-out;
+					&:hover{
+						background: #00d68b;
+						border-color: #00d68b;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	padding: 20px 0 30px;
+	div{
+		text-align: center;
+		a{
+			display: inline-block;
+			max-width: 100px;
+			img{
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+		h4,h5{
+			text-align: center;
+			color: $brand-secondary;
+		}
+	}
+}
