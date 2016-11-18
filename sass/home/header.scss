@@ -73,12 +73,12 @@ header{
 		li{
 			a{
 				//color: lighten($black, 10);
-				color: $brand-primary;
+				color: $brand-secondary;
 				@media (min-width: $screen-sm-min) {
 					line-height: 45px;
 				}
 				&:hover{
-					background: $brand-primary;
+					background: $brand-secondary;
 					color: $white;
 				}
 
